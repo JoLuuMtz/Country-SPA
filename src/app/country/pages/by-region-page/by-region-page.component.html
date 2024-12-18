@@ -1,0 +1,37 @@
+<div class="ms-5 ">
+  <h1> Por Region / Continente</h1>
+  <hr>
+
+  <div class="p-md-2">
+
+    <!-- <search-box
+      [placeholder]=" 'Buscar... America - Asia - Europe - Oceania - Africa' "
+        class="d-flex justify-content-md-start"
+        (search)="SearchRegion($event)">
+    </search-box> -->
+
+
+    <div class="col text-center ">
+      <button  *ngFor="let region of regions"
+        (click)="SearchRegion(region)"
+        class="btn btn-outline-light mx-2"
+        [ngClass]=" {'btn-light , text-dark' : region === regionsSelected }">
+        {{region}}
+      </button>
+
+
+
+    </div>
+
+  </div>
+
+  <div class=" container-md p-md-4">
+
+    <div class="row">
+      <shared-country-table [countries-table]="countries">
+
+      </shared-country-table>
+
+    </div>
+
+  </div>

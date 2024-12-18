@@ -1,0 +1,23 @@
+<div class="ms-5 ">
+  <h1>Por Capital</h1>
+  <hr>
+
+  <div class="p-md-4">
+
+    <search-box [placeholder]=" 'Buscar por capital' " class="d-flex justify-content-md-start"
+      (search)="SearchCapital($event)">
+
+    </search-box>
+    <span *ngIf="resultado" class="text-danger text-center "> * No existe pais con esa <strong>Capital</strong></span>
+
+  </div>
+
+  <div class=" container-md rounded p-md-4">
+    <div class="row">
+      <shared-country-table [countries-table]="countries">
+
+      </shared-country-table>
+
+    </div>
+
+  </div>

@@ -1,0 +1,6 @@
+td {
+  max-width: 100px; /* Ajusta el ancho máximo */
+  overflow: hidden; /* Oculta el texto que desborda */
+  text-overflow: ellipsis; /* Añade puntos suspensivos */
+  white-space: nowrap; /* Evita saltos de línea */
+}

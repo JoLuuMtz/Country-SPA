@@ -1,0 +1,57 @@
+<ng-template #loading>
+
+  <h1>Cargando...</h1>
+
+</ng-template>
+
+
+<h1> Country : <strong>{{ country?.name?.common}} </strong> </h1>
+<hr class="text-white">
+
+<div class="container" *ngIf="country ; else loading">
+
+
+  <div class="row">
+    <div class="col-4">
+      <h2> <strong> Flags </strong> </h2>
+      <img [src]="country.flags.svg" [alt]="country.name.common" alt="" width="200px" class="img-thumbnail">
+    </div>
+    <div class="col">
+
+
+      <h2><strong>Information</strong></h2>
+      <ul class="list-group text-white">
+        <li class="list-group-item list-group-item-dark text-white "> <strong>Capital:</strong> {{ country.capital}} </li>
+        <li class="list-group-item list-group-item-dark text-white "> <strong>Region:</strong> {{ country.region}} </li>
+        <li class="list-group-item list-group-item-dark text-white "> <strong>Subregion:</strong> {{ country.subregion}} </li>
+        <li class="list-group-item list-group-item-dark text-white "> <strong>Area:</strong> {{ country.area | number}} </li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <div>
+    <h2><Strong>Name Translated</Strong></h2>
+    <div class="d-flex flex-wrap">
+      <span class="badge bg-primary m-2">{{ country.translations['ara'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['spa'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['bre'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['est'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['zho'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['fra'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['rus'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['ita'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['tur'].common }}</span>
+      <span class="badge bg-primary m-2">{{ country.translations['jpn'].common }}</span>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+</div>
