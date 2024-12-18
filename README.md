@@ -1,4 +1,5 @@
 # Country SPA
+This project serves as a learning platform for the Angular framework, where I apply and enhance my front-end development skills, knowledge as routing, services, SPA, Observable, RxJs
 
 
 
