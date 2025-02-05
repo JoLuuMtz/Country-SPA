@@ -1,4 +1,7 @@
-# FirstAppSpa
+# Country SPA
+This project serves as a learning platform for the Angular framework, where I apply and enhance my front-end development skills, knowledge as routing, services, SPA, Observable, RxJs
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
