@@ -5,8 +5,7 @@
   <div class="p-md-4">
 
     <search-box [placeholder]=" 'Buscar por capital' " class="d-flex justify-content-md-start"
-      (search)="SearchCapital($event)">
-
+      (search)="SearchCapital($event)"  [InicialValue]="initialValue"  >
     </search-box>
     <span *ngIf="resultado" class="text-danger text-center "> * No existe pais con esa <strong>Capital</strong></span>
 

@@ -25,7 +25,7 @@ export class CountryPageComponent implements OnInit {
 
 
 
-  // lo que se ejecutara cuando inicielice el componente
+  // lo que se ejecutara cuando inicialice el componente
   ngOnInit(): void {
     /*factorizado con switchMap para multiples subscribes*/
 

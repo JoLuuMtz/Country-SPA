@@ -4,23 +4,22 @@
 
   <div class="p-md-2">
 
+    <!-- Busqueda de paises por input chat  -->
     <!-- <search-box
       [placeholder]=" 'Buscar... America - Asia - Europe - Oceania - Africa' "
         class="d-flex justify-content-md-start"
         (search)="SearchRegion($event)">
     </search-box> -->
 
-
+    <!-- Seleccion de paises por region en forma de boton y no por input -->
     <div class="col text-center ">
-      <button  *ngFor="let region of regions"
+      <button *ngFor="let region of regions"
+       
         (click)="SearchRegion(region)"
         class="btn btn-outline-light mx-2"
         [ngClass]=" {'btn-light , text-dark' : region === regionsSelected }">
         {{region}}
       </button>
-
-
-
     </div>
 
   </div>

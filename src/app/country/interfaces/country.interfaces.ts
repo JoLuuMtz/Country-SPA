@@ -1,3 +1,5 @@
+
+// Estructura de la api de paises
 export interface Country {
   name:         Name;
   tld:          string[];

@@ -6,7 +6,7 @@
   <div class="p-md-4">
 
     <search-box [placeholder]=" 'Buscar por pais' " class="d-flex justify-content-md-start"
-      (search)="SearchCountry($event)"></search-box>
+      (search)="SearchCountry($event)"  [InicialValue]="initialValueCountry" ></search-box>
 
       <span *ngIf="resultado" class="text-danger text-center"> No existe el <strong>Pais</strong></span>
 
